@@ -25,7 +25,9 @@ function News() {
             </div>
             <div>
               <h1 className='text-[21px] lg:text-[33px] font-[800] mb-6'>{item.title}</h1>
-              <p className='text-[14px] lg:text-[16px] font-[400]'>{item.news}</p>
+              {item.news.split('. ').map((paragraph, index) => (
+                <p key={index} className='text-[16px] font-[400] mb-4'>{paragraph}.</p>
+              ))}   
             </div>
           </div>
         ))}
