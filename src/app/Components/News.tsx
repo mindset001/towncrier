@@ -4,13 +4,13 @@ import NewsContent from './NewsContent';
 import { Spin } from "antd";
 
 function News() {
-  const [visibleItems, setVisibleItems] = useState(4);
+  const [visibleItems, setVisibleItems] = useState(3);
   const [loading, setLoading] = useState(false);
 
   const loadMore = () => {
     setLoading(true);
     setTimeout(() => {
-      setVisibleItems(prevVisibleItems => prevVisibleItems + 4);
+      setVisibleItems(prevVisibleItems => prevVisibleItems + 3);
       setLoading(false);
     }, 1000); // Simulate loading delay
   };
@@ -25,8 +25,8 @@ function News() {
             </div>
             <div>
               <h1 className='text-[21px] lg:text-[33px] font-[800] mb-6'>{item.title}</h1>
-              {item.news.split('. ').map((paragraph, index) => (
-                <p key={index} className='text-[16px] font-[400] mb-4'>{paragraph}.</p>
+              {item.news.split('\n\n').map((paragraph, index) => (
+                <p key={index} className='text-[16px] font-[400] mb-4'>{paragraph}</p>
               ))}   
             </div>
           </div>
