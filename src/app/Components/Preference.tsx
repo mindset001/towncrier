@@ -37,7 +37,7 @@ function Preference() {
                 <div className='mt-20'>
                     <h1 className='text-[20px] font-[700]'>Your preference language</h1>
                     <p className='text-[16px] font-[400]'>We will show you articles  according to your prefer language.</p>
-                    <div className='my-4 w-[20%] '>
+                    <div className='my-4 md:w-[20%] '>
                         <select
                             className="form-select block w-full mt-1 border border-1 rounded-lg outline-none p-1"
                         >
