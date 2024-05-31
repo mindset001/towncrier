@@ -25,10 +25,7 @@ function NewsHeader() {
 export default NewsHeader
 
 const Navcontent = [
-    {
-        link: '',
-        name: 'Subscribe'
-    },
+   
     {
         link: '',
         name: 'View Online'
