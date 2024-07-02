@@ -11,7 +11,7 @@ function Tech() {
 
         <div className='w-[95%] md:w-[75%] flex flex-col items-center'>
             <div className='w-full md:w-[65%] lg:w-[35%] my-6 flex items-center flex-col md:flex-row gap-2'>
-            <button className='bg-[#fff] rounded-[5px] text-[#235784] px-4 h-[48px]  md:w-[157px] w-full '>Subscribe Now</button>
+            <button className='bg-[#fff] rounded-[5px] text-[#235784] px-4 h-[48px]  md:w-[157px] w-full '><a href="#hero">Subscribe Now</a></button>
                 <button className='bg-[#235784] rounded-[5px] text-[#fff] px-4 h-[48px]  md:w-[157px] w-full '>Message Us</button>
             </div>
            

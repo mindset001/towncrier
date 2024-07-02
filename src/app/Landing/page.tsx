@@ -9,7 +9,9 @@ function Landing() {
   return (
     <main>
         <Header/>
-        <Hero/>
+       <div id='hero'>
+       <Hero/>
+       </div>
         <Concept/>
         <Tech/>
         <Town/>
