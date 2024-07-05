@@ -54,7 +54,7 @@ function Footer() {
                     <p className='font-[500] text-[18px] text-[#6B7280]'>Been forwarded this newsletter? <span className='text-[#93CAF5]'><a href="">Sign up for free</a></span></p>
                     <p className='font-[500] text-[18px] text-[#6B7280]'>    Enjoying TownCrier? <span className='text-[#93CAF5]'> <a href="">Click to share</a></span></p>
                     <p className='font-[500] text-[18px]' > <span>{`${year} TownCrier. `}</span> </p>
-                    <p className='font-[500] text-[18px]'>Asteria Alliance Limted</p>
+                    <p className='font-[500] text-[18px]'>Pi Digital Limited</p>
                     <p className='font-[500] text-[18px]'>16 Bello Yusuf Street, Jabi,Abuja 900211.</p>
                 </div>
             

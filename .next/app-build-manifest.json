@@ -16,10 +16,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/Newsletter/page.js"
     ],
-    "/Preference/page": [
+    "/articles/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/Preference/page.js"
+      "static/chunks/app/articles/page.js"
+    ],
+    "/articles/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/articles/[id]/page.js"
     ]
   }
 }
