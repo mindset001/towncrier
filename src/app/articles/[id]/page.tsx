@@ -30,7 +30,7 @@ const ArticlePage = ({ params }: ArticlePageProps) => {
   return (
     <main>
       <ArticleHeader />
-      <div className="w-[60%] p-4 max-w-3xl mx-auto">
+      <div className="w-[90%] lg:w-[60%] p-4 max-w-3xl mx-auto">
         <p className='text-[12px] my-6'>TownCrier `{'>'}` Posts`{'>'}` {article.title}</p>
         <div className="text-[#000] text-[12px] font-[600] flex justify-between items-center">
           <div className='bg-[#D0E2FE] p-[6px]'>
@@ -40,7 +40,7 @@ const ArticlePage = ({ params }: ArticlePageProps) => {
             {article.time}
           </div>
         </div>
-        <h1 className="text-[33px] font-bold mb-4">{article.title}</h1>
+        <h1 className="text-[20px] lg:text-[33px] font-bold mb-4">{article.title}</h1>
         <Image 
           src={article.imageUrl} 
           alt={article.title} 

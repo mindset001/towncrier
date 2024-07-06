@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { articles } from './data/article';
 
-const ITEMS_PER_PAGE = 6; // Adjust this number to set items per page
+const ITEMS_PER_PAGE = 12; // Adjust this number to set items per page
 
 const ArticlesGrid = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -76,7 +76,8 @@ const ArticlesGrid = () => {
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
         {currentArticles.length > 0 ? (
           currentArticles.map((article) => (
-            <div key={article.id} className="border border-[#000] rounded-[5px] overflow-hidden">
+            <Link href={`/articles/${article.id}`}  key={article.id} className="border-[1px] border-[#000] rounded-[5px] overflow-hidden">
+            <div>
               <Image 
                 src={article.imageUrl} 
                 alt={article.title} 
@@ -84,20 +85,24 @@ const ArticlesGrid = () => {
                 height={250} 
                 className="w-full h-auto" 
               />
-              <div className="p-4 px-6">
+              
+              <div className="p-4 px-6 flex flex-col justify-between h-[300px]">
+                <div>
                 <div className="text-[#000] text-[12px] font-[600] flex justify-between items-center">
                   <div className='bg-[#f2f2f2] p-[3px]'>
                 {article.date} | {article.category}</div>
                 <div>
                 {article.time} </div>
                 </div>
-                <h2 className="text-[#000] text-[24px] font-[700] mt-2">{article.title}</h2>
-                <p className="text-[#000] text-[14px] font-[400] mt-2">{article.description}</p>
-                <Link href={`/articles/${article.id}`} className="text-[#000] mt-4 text-[24px] font-[600] inline-block">
+                <h2 className="text-[#000] text-[20px] lg:text-[20px] 2xl:text-[30px] font-[700] mt-2">{article.title}</h2>
+                <p className="text-[#000] text-[14px] font-[400] 2xl:text-[20px] mt-2">{article.description}</p>
+                </div>
+                <Link href={`/articles/${article.id}`} className="text-[#000] mt-4 text-[16px] 2xl:text-[20px] font-[600] inline-block">
                   Read more &gt;
                 </Link>
               </div>
-            </div>
+              
+            </div></Link>
           ))
         ) : (
           <p className="text-[#000] text-[18px] font-[600]">No articles found</p>
