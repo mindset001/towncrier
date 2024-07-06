@@ -40,7 +40,7 @@ const ArticlesGrid = () => {
 
   return (
     <div className="w-full items-center justify-center p-4 flex flex-col">
-    <div className='w-[85%] mt-6'>
+    <div className='w-[85%] 2xl:w-[60%] mt-6'>
       {/* Search Field */}
       <div className="my-4 w-full md:w-[50%]">
         <input
@@ -51,7 +51,7 @@ const ArticlesGrid = () => {
             setCurrentPage(1); // Reset to first page on search change
           }}
           placeholder="Search articles..."
-          className="p-2 border border-[#D0D5DD] rounded w-full"
+          className="p-2 border 2xl:text-[20px] border-[#D0D5DD] rounded w-full"
         />
       </div>
         {/* Category Filter */}
@@ -63,7 +63,7 @@ const ArticlesGrid = () => {
               setSelectedCategory(category);
               setCurrentPage(1); // Reset to first page on category change
             }}
-            className={`p-2 cursor-pointer  text-[14px] ${selectedCategory === category ? ' text-[#235784] underline' : 'bg-white text-[#667085]'}`}
+            className={`p-2 cursor-pointer 2xl:text-[20px]  text-[14px] ${selectedCategory === category ? ' text-[#235784] underline' : 'bg-white text-[#667085]'}`}
           >
             {category}
           </div>

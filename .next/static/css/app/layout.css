@@ -1464,6 +1464,14 @@ body {
 
 @media (min-width: 1536px) {
 
+  .\32xl\:w-\[60\] {
+    width: 60;
+  }
+
+  .\32xl\:w-\[60\%\] {
+    width: 60%;
+  }
+
   .\32xl\:text-\[20px\] {
     font-size: 20px;
   }
